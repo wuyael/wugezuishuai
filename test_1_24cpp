@@ -1,0 +1,38 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+#include<string.h>
+#include<time.h>
+#include<stdlib.h>
+
+void point_su(int su)
+{
+	int i = 2;
+	int count = 1;
+	for (i; i < su; i++)
+	{
+		if (su / i * i == su)
+		{
+			count = 0;
+		}
+		else
+		{
+			count;
+		}
+	}
+	if (count)
+	{
+		printf("'%d'是素数",su);
+	}
+	else
+	{
+		printf("'%d'不是素数",su);
+	}
+}
+int main(void)
+{
+	int zhi = 1;
+	scanf("%d", &zhi);
+	point_su(zhi);
+
+	return 0;
+}
